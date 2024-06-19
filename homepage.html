@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        h1{
+            text-align:center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        h4{
+            color:rgb(30, 115, 194)
+        }
+        button{
+            background-color:red;
+            align-items: center;
+            color: aliceblue;
+            font-size: 20px;
+        padding: 10px 30px;
+            border-radius: 25px;
+        }
+        pre{
+            text-align: center;
+        }
+        div{
+            justify-content: right;
+            padding-top: 0px;
+            padding-left: 300px;
+            position:absolute;
+            top:200px;
+            right: 10px;
+            padding-right: 70px;
+
+    
+        }
+        header{
+            background-color: red;
+            height:100px;
+            padding-top: 10px;
+            color:white;
+            background: linear-gradient(to right, #bd1a14, #ff0000,#bd1a14);
+            background-color: rgba(255, 0, 0, 0.8);
+            padding: 20px;
+        
+        }
+      .button{
+
+        text-decoration: none;
+        color: white;
+      }
+      nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(116, 36, 36, 0.2);
+        }
+
+.container{
+  width: 200px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+  position: relative;
+  padding-top: 5px;
+  top: 10px;
+}
+
+.moving-image {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  opacity: 0;
+  width: 100%; /* Adjust width as needed */
+  height: 100%; /* Adjust height as needed */
+  object-fit: cover;
+  animation: moveImages 10s linear infinite;
+}
+
+.image1 {
+  animation-delay: 0s;
+}
+
+.image2 {
+  animation-delay: 3s;
+}
+
+
+
+@keyframes moveImages {
+  0%, 100% {
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+  
+}
+.home-icon {
+  background-image: url('home-icon-white-11.jpg'); 
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-left: 35px; 
+  padding-top: 10px;
+  background-position: 11px;
+}
+.contact-icon {
+  background-image: url('contactus.png'); 
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  padding-top: 10px;
+  background-position: 11px;
+}
+.about-icon {
+  background-image: url('threeabout.png'); 
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  padding-top: 10px;
+  background-position: 11px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BLOOD BANK MANAGEMENT SYSTEM</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html"class="home-icon">Home</a></li>
+                <li><a href="contact.html"class="contact-icon">Contact Us</a></li>
+                <li><a href="about.html"class="about-icon">About Us</a></li>
+            </ul>
+        </nav>
+        </header>
+   
+
+    <div class="container">
+        <img src="image1.jpg" alt="Moving Image 1" class="moving-image image1">
+        <img src="image2.jpg" alt="Moving Image 2" class="moving-image image2">
+        
+        
+      </div>
+      
+    <div class="column">
+    <h1>Are  you a donor or receiver?</h1>
+
+<pre>
+    <h4> click here to enter your details</h4>
+    <button><a href="donor.html" class="button">DONOR</a> </button><br><br>
+    <button><a href="receiver.html" class="button">RECEIVER</a></button>
+</pre>
+</div>
+
+</body>
+</html>
